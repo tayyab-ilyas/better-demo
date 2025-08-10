@@ -33,7 +33,6 @@ jobs:
         run: |
           echo "${{ secrets.KUBECONFIG_DATA }}" > kubeconfig
           export KUBECONFIG=kubeconfig
-          kubectl cluster-info
 
       - name: Deploy to Kubernetes
         run: |
